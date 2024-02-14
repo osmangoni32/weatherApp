@@ -9,7 +9,9 @@ import { formattedDate } from "../../utils/utila-date";
 
 export default function WeatherHeadline() {
   const { weatherData } = useContext(WeatherContext);
-  const { location, time, temperature,climate } = weatherData;
+  const { location, time, temperature, climate } = weatherData;
+  //const { favorites } = useLocalStorage();
+  //console.log(favorites);
   const getIcon = (opt) => {
     switch (opt) {
       case "cloud":
